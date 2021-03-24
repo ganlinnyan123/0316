@@ -6,7 +6,6 @@ import cors from 'cors';
 import morgan from 'morgan';
 import passport from 'passport';
 import session from 'express-session';
-import cookieParser from 'cookie-parser';
 import index from './routes/index';
 
 require('dotenv').config();
@@ -14,8 +13,8 @@ require('dotenv').config();
 const app = express();
 
 app.use(express.json());
-app.use(express.urlencoded({extended:false}));//.
-app.use(cookieParser());
+app.use(express.urlencoded({extended:false}));
+app.use(cookieParse());
 app.use(express.static(path.resolve(__dirname,'../view')));
 app.use(morgan('dev'));
 app.use(cors());

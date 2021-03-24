@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start":"nodemon --exec babel-node src/app.js",
+    "start": "nodemon --exec babel-node src/app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -17,8 +17,11 @@
     "express": "^4.17.1",
     "express-session": "^1.17.1",
     "http": "0.0.1-security",
+    "lodash": "^4.17.21",
     "morgan": "^1.10.0",
-    "passport": "^0.4.1"
+    "mysql2": "^2.2.5",
+    "passport": "^0.4.1",
+    "sequelize": "^5.22.4"
   },
   "devDependencies": {
     "@babel/cli": "^7.13.10",
@@ -32,6 +35,7 @@
     "eslint": "^7.22.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-plugin-import": "^2.22.1",
-    "nodemon": "^2.0.7"
+    "nodemon": "^2.0.7",
+    "sequelize-cli": "^5.5.1"
   }
 }
